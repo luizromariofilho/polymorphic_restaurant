@@ -3,12 +3,6 @@ require 'models/concerns/reviewable_spec'
 
 RSpec.describe Restaurant, type: :model do
   it_behaves_like "reviewable"
-
-  
-
-  # before(:all) do
-  #   @restaurant = create(:restaurant)
-  # end
   
   context "validations" do 
 
