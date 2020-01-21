@@ -44,6 +44,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'factory_bot_rails'
   gem 'database_cleaner'
+  gem 'rubocop', require: false
 end
 
 group :development do
