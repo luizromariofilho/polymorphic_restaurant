@@ -1,14 +1,15 @@
-example_id                              | status | run_time        |
---------------------------------------- | ------ | --------------- |
-./spec/models/restaurant_spec.rb[1:1:1] | passed | 0.00139 seconds |
-./spec/models/restaurant_spec.rb[1:2:1] | passed | 0.00502 seconds |
-./spec/models/restaurant_spec.rb[1:2:2] | passed | 0.01024 seconds |
-./spec/models/restaurant_spec.rb[1:2:3] | passed | 0.00933 seconds |
-./spec/models/restaurant_spec.rb[1:2:4] | passed | 0.00807 seconds |
-./spec/models/restaurant_spec.rb[1:2:5] | passed | 0.01286 seconds |
-./spec/models/review_spec.rb[1:1]       | passed | 0.00081 seconds |
-./spec/models/review_spec.rb[1:2]       | passed | 0.00575 seconds |
-./spec/models/review_spec.rb[1:3]       | passed | 0.18038 seconds |
-./spec/models/review_spec.rb[1:4:1]     | passed | 0.0121 seconds  |
-./spec/models/review_spec.rb[1:4:2]     | passed | 0.00673 seconds |
-./spec/models/review_spec.rb[1:4:3]     | passed | 0.01079 seconds |
+example_id                                   | status | run_time        |
+-------------------------------------------- | ------ | --------------- |
+./spec/models/restaurant_spec.rb[1:1:1]      | passed | 0.0016 seconds  |
+./spec/models/restaurant_spec.rb[1:2:1]      | passed | 0.00452 seconds |
+./spec/models/restaurant_spec.rb[1:2:2]      | passed | 0.01008 seconds |
+./spec/models/restaurant_spec.rb[1:2:3]      | passed | 0.00898 seconds |
+./spec/models/restaurant_spec.rb[1:2:4]      | passed | 0.00815 seconds |
+./spec/models/restaurant_spec.rb[1:2:5]      | passed | 0.01206 seconds |
+./spec/models/review_spec.rb[1:1]            | passed | 0.00087 seconds |
+./spec/models/review_spec.rb[1:2]            | passed | 0.00774 seconds |
+./spec/models/review_spec.rb[1:3]            | passed | 0.08125 seconds |
+./spec/models/review_spec.rb[1:4:1]          | passed | 0.01121 seconds |
+./spec/models/review_spec.rb[1:4:2]          | passed | 0.00797 seconds |
+./spec/models/review_spec.rb[1:4:3]          | passed | 0.01604 seconds |
+./spec/requests/restaurants_spec.rb[1:1:1:1] | passed | 0.0384 seconds  |

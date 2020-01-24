@@ -21,7 +21,7 @@ RSpec.describe Restaurant, type: :model do
 	  end
 
 	  it "has a unique phone" do
-	    should validate_uniqueness_of(:phone)
+	    should validate_uniqueness_of(:phone).case_insensitive
 	  end
 	  
 	  it "is not valid without a phone" do 
