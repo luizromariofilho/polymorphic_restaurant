@@ -85,4 +85,29 @@ RSpec.describe 'Restaurants', type: :request do
       end
     end
   end
+
+  describe 'PUT /restaurants/:id' do
+    before do  
+        put "/restaurants/#{restaurant_id}", params: { restaurant: restaurant_params }.to_json, headers: headers
+    end
+
+    context 'when the request params are valid' do
+        name= Faker::Company.name
+        phone= Faker::PhoneNumber.phone_number 
+        address= Faker::Address.full_address
+        website= Faker::Internet.url
+        let(:restaurant_params){ {name: name, phone: phone, address: address, website: website} }
+
+        it 'returns status code :ok' do
+           expect(response).to have_http_status(:ok) 
+        end
+
+        it 'returns the json data for  the updated restaurant' do
+            expect(json_body[:name].to_s).to eq(restaurant_params[:name])
+            expect(json_body[:phone].to_s).to eq(restaurant_params[:phone])
+            expect(json_body[:address].to_s).to eq(restaurant_params[:address])
+            expect(json_body[:website].to_s).to eq(restaurant_params[:website])
+        end
+    end
+  end 
 end

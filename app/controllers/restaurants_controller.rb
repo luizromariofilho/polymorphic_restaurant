@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-	before_action :set_restaurant, only: [:show, :update, :destroy]
+	before_action :set_restaurant, only: [:show, :update]
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found	
 
 
@@ -24,6 +24,14 @@ class RestaurantsController < ApplicationController
       render json: @restaurant, status: :created
     else
       render json: { errors: @restaurant.errors}, status: :unprocessable_entity
+    end
+  end
+
+  def update
+    if(@restaurant.update(restaurant_params))
+      render json: @restaurant, status: :ok
+    else
+      render json: {errors: @restaurant.errors}, status: :unprocessable_entity            
     end
   end
 
